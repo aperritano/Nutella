@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Nutella_Example' do
+  pod 'Nutella', :path => '../'
+
+  target 'Nutella_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
