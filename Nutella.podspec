@@ -1,42 +1,15 @@
-#
-# Be sure to run `pod lib lint Nutella.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
+Pod::Spec.new do |spec|
+  spec.name = "Nutella"
+  spec.version = "1.0.0"
+  spec.summary = "Swift for Nutella"
+  spec.homepage = "https://github.com/aperritano/Nutella"
+  spec.license = { type: 'MIT', file: 'LICENSE' }
+  spec.authors = { "Anthony Perritano" => 'aperritano@gmail.com' }
+  spec.social_media_url = "https://github.com/aperritano/Nutella"
 
-Pod::Spec.new do |s|
-  s.name             = 'Nutella'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Nutella.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/Nutella'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Anthony' => 'aperritano@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/Nutella.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'Nutella/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Nutella' => ['Nutella/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  spec.platform = :ios, "9.3"
+  spec.requires_arc = true
+  spec.source = { git: "https://github.com/aperritano/Nutella.git", tag: "v#{spec.version}", submodules: true }
+  spec.source_files = "Nutella/**/*.{h,swift}"
+  spec.dependency "MQTTClient"
 end

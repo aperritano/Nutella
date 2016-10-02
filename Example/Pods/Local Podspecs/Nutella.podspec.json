@@ -1,0 +1,29 @@
+{
+  "name": "Nutella",
+  "version": "1.0.0",
+  "summary": "Swift for Nutella",
+  "homepage": "https://github.com/aperritano/Nutella",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Anthony Perritano": "aperritano@gmail.com"
+  },
+  "social_media_url": "https://github.com/aperritano/Nutella",
+  "platforms": {
+    "ios": "9.3"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/aperritano/Nutella.git",
+    "tag": "v1.0.0",
+    "submodules": true
+  },
+  "source_files": "Nutella/**/*.{h,swift}",
+  "dependencies": {
+    "MQTTClient": [
+
+    ]
+  }
+}

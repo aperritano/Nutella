@@ -1,0 +1,6 @@
+framework module Nutella {
+  umbrella header "Nutella-umbrella.h"
+
+  export *
+  module * { export * }
+}
